@@ -1,0 +1,25 @@
+{
+  "name": "cypresstemplate_api_e2e",
+  "version": "1.0.0",
+  "description": "CypressAutomationTemplate for API and E2E UI testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --browser chrome"
+  },
+  "keywords": [
+    "cypress",
+    "api_testing",
+    "e2e_testing",
+    "xpath"
+  ],
+  "author": "Ha Cao",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.3.0",
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.2",
+    "typescript": "^4.9.4"
+  }
+}
