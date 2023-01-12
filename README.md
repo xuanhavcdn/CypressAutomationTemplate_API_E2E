@@ -1,13 +1,16 @@
-# CypressAutomationTemplate_API_E2E
-1. Download and Install  Node.js & NPM: 
+# Ha Cao Cypress setup to build Automation project
+## 1. Download and Install  Node.js & NPM: 
 - https://nodejs.org/en/download/
 - https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-After install required software => Follow there step to build project
-2. Create folder code
-3. Open folder code in Visual Studio Code
-4. Open Terminal
-5. Create new cypress project:
+# After install required software => Follow there step to build project
+## 2. Create folder code
+## 3. Open folder code in Visual Studio Code
+## 4. Open Terminal
+## 5. Create new cypress project:
+```javascript
 npm init
+```
+```javascript
 {
   "name": "cypressautomationtemplate",
   "version": "1.0.0",
@@ -23,15 +26,21 @@ npm init
   "author": "Ha Cao",
   "license": "ISC"
 }
-
-6. install cypress:
+```
+## 6. Install cypress:
+```javascript
 npm install cypress --save-dev
+```
 
-7: start cypress project:
+## 7: Start cypress project:
+```javascript
 npm run test or npx cypress open
-
-8. Typescript install setup:
+```
+## 8. Typescript install setup:
+```javascript
 npm install --save-dev typescript
+```
+```javascript
 create file tsconfig.json:
 {
   "compilerOptions": {
@@ -41,30 +50,42 @@ create file tsconfig.json:
   },
   "include": ["**/*.ts"]
 }
+```
+- https://docs.cypress.io/guides/tooling/typescript-support#Install-TypeScript
 
-https://docs.cypress.io/guides/tooling/typescript-support#Install-TypeScript
-
-9. xpath setup:
-https://github.com/cypress-io/cypress/tree/develop/npm/xpath
+## 9. Xpath setup:
+- https://github.com/cypress-io/cypress/tree/develop/npm/xpath
+```javascript
 npm install -D @cypress/xpath --save-dev
-Add the code into cypress.config.js: require('@cypress/xpath');
+```
+Add the code into cypress.config.js:
+```javascript
+require('@cypress/xpath');
+```
 Importance note: add the code  into tsconfig.json:
+```javascript
 "types": ["cypress", "node", "@cypress/xpath"]
-
-10. Page oject model setup:
-create file Selector as pages
+```
+## 10. Page oject model setup:
+Create file Selector as pages
+```javascript
 const LoginPage = {
   //elements input here:
   username: "",
   ....
 }
 export default LoginPage
-insert the code into .cy.ts file:
+```
+Insert the code into .cy.ts file:
+```javascript
 import apiLoginPage from "../pages/apiLoginPage";
-
-11. How to use Fixture file connection, insert the code into .cy.ts file
+```
+## 11. How to use Fixture file connection:
+Insert the code into .cy.ts file
+```javascript
 const apittesingdatajson = require("../../fixtures/apitesting")
-
+```
+```javascript
 ProjectRoot
     |__cypress
     |        |___ fixtures
@@ -78,16 +99,29 @@ ProjectRoot
     |__package.json
     |__cypress.config.js
     |__tsconfig.json
-
-12. Install report: https://www.npmjs.com/package/cypress-mochawesome-reporter
+```
+## 12. Install report: 
+- https://www.npmjs.com/package/cypress-mochawesome-reporter
+```javascript
 npm install mochawesome --save-dev
+```
+```javascript
 npm i --save-dev cypress-mochawesome-reporter
+```
+```javascript
 npm install mochawesome-merge --save-dev
+```
+Options commands:
+- https://docs.cypress.io/guides/guides/command-line#cypress-run
 
-Details for: Options commands: https://docs.cypress.io/guides/guides/command-line#cypress-run
-
-13. Cucumber setup:
-https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md
+## 13. Cucumber setup:
+- https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md
+```javascript
 npm install @badeball/cypress-cucumber-preprocessor --save-dev
+```
+```javascript
 npm install @bahmutov/cypress-esbuild-preprocessor --save-dev
+```
+```javascript
 npm install esbuild --save-dev
+```
