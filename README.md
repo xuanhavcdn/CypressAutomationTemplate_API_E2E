@@ -58,7 +58,7 @@ create file tsconfig.json:
 ```javascript
 npm install -D @cypress/xpath --save-dev
 ```
-Add the code into cypress.config.js:
+Add the code into e2e.js:
 ```javascript
 require('@cypress/xpath');
 ```
