@@ -5,4 +5,4 @@
       "types": ["cypress", "node", "@cypress/xpath"]
     },
     "include": ["**/*.ts"]
-  }
+}
