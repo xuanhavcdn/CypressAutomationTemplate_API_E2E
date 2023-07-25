@@ -129,3 +129,11 @@ npm install @bahmutov/cypress-esbuild-preprocessor --save-dev
 ```javascript
 npm install esbuild --save-dev
 ```
+## 14. Schemas install setup - chai assertion library along with the ajv package
+```javascript
+npm install ajv --save-dev
+```
+## 15. Use CSV file
+```javascript
+npm install csv-parser --save-dev
+```
