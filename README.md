@@ -1,4 +1,5 @@
 # Ha Cao Cypress setup to build Automation project
+
 ## 1. Download and Install  Node.js & NPM: 
 - https://nodejs.org/en/download/
 - https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
@@ -31,7 +32,10 @@ npm init
 ```javascript
 npm install cypress --save-dev
 ```
-
+# Update cypress
+```javascript
+npm install --save-dev cypress@12.17.2
+```
 ## 7: Start cypress project:
 ```javascript
 npm run test or npx cypress open
