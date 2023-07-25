@@ -17,7 +17,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     // baseUrl: "https://staging-api-app.highlandscoffee.com.vn"
-    baseUrl: "https://web.v2-stg.thuocsi.vn"
+    baseUrl: "https://pos.v2-stg.thuocsi.vn"
   },
   //reponsive same with laptop device
   viewportWidth: 1366,
