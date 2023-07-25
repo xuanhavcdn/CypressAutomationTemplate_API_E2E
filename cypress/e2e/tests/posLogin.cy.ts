@@ -20,6 +20,6 @@ describe("Test POS login", () => {
         cy.get(posLoginPage.password).clear().type(posLoginPagedata.passWord)
         cy.get(posLoginPage.loginBtn).click()
         //explicit wait
-        cy.wait(posLoginPage.accountName).should("be.visible")
+        cy.get(posLoginPage.accountName).should("be.visible")
     })
 })
