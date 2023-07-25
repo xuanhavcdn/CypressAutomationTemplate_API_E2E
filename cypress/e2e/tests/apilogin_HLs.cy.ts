@@ -18,6 +18,7 @@ describe("Route api", () => {
             expect(response.status).eq(200)
         })
     })
+
     it("Verify user able to login success with correct username and password", () => {
         cy.request({
             method: "POST",
@@ -32,7 +33,10 @@ describe("Route api", () => {
         }).then((response) => {
             expect(response.status).eq(200)
             accessToken = response.body.AccessToken
-            cy.writeFile("cypress/fixtures/accessToken.json", { accessToken })
         })
     })
+    it("Set authorization token", () => {
+        cy.writeFile("cypress/fixtures/accessToken.json", { accessToken })
+    })
+
 })
