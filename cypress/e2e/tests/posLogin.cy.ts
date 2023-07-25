@@ -5,8 +5,8 @@ const posLoginPagedata = require("../../fixtures/login")
 describe("Test POS login", () => {
     beforeEach("Open POS page", () => {
         cy.visit("/")
-        //implicit wait
-        cy.wait(2000)
+        //fluent wait
+        cy.get(posLoginPage.loginPage, {timeout: 5000}).should("be.visible")
     })
     it("TC1: Login success with correct username and password (implicit wait)", () => {
         cy.get(posLoginPage.username).clear().type(posLoginPagedata.userName)
