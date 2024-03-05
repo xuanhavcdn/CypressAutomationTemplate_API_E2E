@@ -1,6 +1,6 @@
-import LoginPage from "../pages/loginPage";
+import LoginPage from "../../pages/loginPage";
 
-const logindata = require("../../fixtures/login")
+const logindata = require("../../../fixtures/login")
 
 describe("Login test", ()=> {
     beforeEach("Open the website", () => {
