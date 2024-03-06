@@ -15,7 +15,11 @@ jobs:
     - name: Run Cypress tests
       uses: cypress-io/github-action@v6
       with:
+<<<<<<< HEAD
         start: npm run test-headless2
+=======
+        start: npm run test
+>>>>>>> 9e48f28d488aaaee34e6b3a481ac0dde590f7919
         record: true
       env:
         CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
