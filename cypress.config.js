@@ -17,8 +17,7 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on)
       // implement node event listeners here
     },
-    // baseUrl: "https://staging-api-app.highlandscoffee.com.vn"
-    baseUrl: "https://pos.v2-stg.thuocsi.vn"
+    baseUrl: "https://demoqa.com"
   },
   //reponsive same with laptop device
   viewportWidth: 1366,

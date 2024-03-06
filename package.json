@@ -4,7 +4,9 @@
   "description": "CypressAutomationTemplate for API and E2E UI testing",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --headless --browser chrome --spec cypress/e2e/**"
+    "test-headless": "cypress run --headless --browser chrome --spec cypress/e2e/**",
+    "test-headless2": "cypress run --browser=chrome",
+    "test": "cypress open"
   },
   "keywords": [
     "cypress",
